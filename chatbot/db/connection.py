@@ -19,7 +19,7 @@ def get_connection():
                 user=result.username,
                 password=result.password,
                 port=result.port or 5432,
-                sslmode="require"
+                sslmode="disable"
             )
         else:
             # Fallback a variables individuales
